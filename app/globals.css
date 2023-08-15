@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: "Tomato Grotesk";
+    src: url("../public/fonts/tomato-grotesk-regular.woff2") format("woff2"),
+    url("../public/fonts/tomato-grotesk-regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tomato Grotesk";
+    src: url("../public/fonts/tomato-grotesk-medium.woff2") format("woff2"),
+    url("../public/fonts/tomato-grotesk-medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tomato Grotesk";
+    src: url("../public/fonts/tomato-grotesk-black.woff2") format("woff2"),
+    url("../public/fonts/tomato-grotesk-black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@tailwind utilities;
