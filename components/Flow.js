@@ -36,8 +36,7 @@ const initialNodes = [
     position: { x: 0, y: -175 },
     data: {
       label: "Ressources humaines",
-      additionnalClass:
-        "bg-primary-orange text-primary-white ring-primary-orange",
+      className: "bg-primary-orange text-primary-white ring-primary-orange",
       handles: [
         { type: "target", position: Position.Bottom, id: "bottom" },
         { type: "source", position: Position.Top, id: "top" },
@@ -50,8 +49,7 @@ const initialNodes = [
     position: { x: 175, y: 0 },
     data: {
       label: "Employés",
-      additionnalClass:
-        "bg-secondary-yellow text-primary-white ring-secondary-yellow",
+      className: "bg-secondary-yellow text-primary-white ring-secondary-yellow",
       handles: [
         { type: "target", position: Position.Left, id: "left" },
         { type: "source", position: Position.Right, id: "right" },
@@ -64,8 +62,7 @@ const initialNodes = [
     position: { x: 0, y: 175 },
     data: {
       label: "Entreprise",
-      additionnalClass:
-        "bg-primary-black text-primary-white ring-primary-black",
+      className: "bg-primary-black text-primary-white ring-primary-black",
       handles: [
         { type: "target", position: Position.Top, id: "top" },
         { type: "source", position: Position.Bottom, id: "bottom" },
@@ -78,8 +75,7 @@ const initialNodes = [
     position: { x: -175, y: 0 },
     data: {
       label: "Prévention",
-      additionnalClass:
-        "bg-secondary-blue text-primary-white ring-secondary-blue",
+      className: "bg-secondary-blue text-primary-white ring-secondary-blue",
       handles: [
         { type: "target", position: Position.Right, id: "right" },
         { type: "source", position: Position.Left, id: "left" },
@@ -347,14 +343,14 @@ const initialEdges = [
   },
 ];
 
-export default function Flow() {
+export default function Flow({ className = "" }) {
   const nodeTypes = useMemo(
     () => ({ list: ListNode, rounded: RoundedNode, origin: OriginNode }),
     []
   );
 
   return (
-    <div className={"-mx-32"}>
+    <div className={className}>
       <div className={"w-full aspect-video"}>
         <ReactFlow
           className={"border border-primary-black"}

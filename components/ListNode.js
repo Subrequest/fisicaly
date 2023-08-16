@@ -24,7 +24,7 @@ function ListNode({ data }) {
         >
           <div className={`p-2 rounded-full ${data.colors.bg}`}>
             <Arrow
-              className={`h-6 w-6 text-white fill-current ${arrowDirection}`}
+              className={`h-6 w-6 text-primary-white fill-current ${arrowDirection}`}
             />
           </div>
         </div>

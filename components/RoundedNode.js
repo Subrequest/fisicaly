@@ -5,7 +5,7 @@ import { memo } from "react";
 function RoundedNode({ data }) {
   return (
     <div
-      className={`text-center font-secondary uppercase font-bold tracking-wider rounded-full h-32 w-32 text-sm flex items-center justify-center ${data.additionnalClass}`}
+      className={`text-center font-secondary uppercase font-bold tracking-wider rounded-full h-32 w-32 text-sm flex items-center justify-center ${data.className}`}
     >
       <div>
         {data.handles.map((handle, index) => (

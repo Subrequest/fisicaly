@@ -1,7 +1,7 @@
-export default function Surtitle({ children, additionnalClass }) {
+export default function Surtitle({ children, className }) {
   return (
     <span
-      className={`font-secondary uppercase font-bold tracking-wider ${additionnalClass}`}
+      className={`flex font-secondary uppercase font-bold tracking-wider ${className}`}
     >
       {children}
     </span>
