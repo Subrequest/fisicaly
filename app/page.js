@@ -7,7 +7,7 @@ import Flow from "@/components/Flow";
 export default function Home() {
   return (
     <main className="max-w-screen-lg mx-auto p-5 text-primary-black py-32">
-      <section className={"grid gap-16"}>
+      <section className={"grid gap-16 mb-32"}>
         <div className={"grid grid-cols-12 gap-20"}>
           <div className={"col-span-10"}>
             <div className={"font-medium"}>
@@ -77,8 +77,8 @@ export default function Home() {
           <Arrow className={"fill-current text-primary-black rotate-90 h-8"} />
         </div>
 
-        <div className={"grid grid-cols-2"}>
-          <div class={"bg-primary-black/10 p-8"}>
+        <div className={"grid lg:grid-cols-2"}>
+          <div className={"bg-primary-black/10 p-8"}>
             <h4 className={"flex flex-col mb-4"}>
               <Surtitle additionnalClass={"text-primary-orange text-xs"}>
                 Spécialité
