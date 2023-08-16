@@ -3,14 +3,15 @@ import Link from "next/link";
 import Surtitle from "@/components/Surtitle";
 import Arrow from "@/public/images/Arrow.svg";
 import Flow from "@/components/Flow";
-import LogoFisicaly from "@/public/images/logo_fisicaly_noir_long.svg";
+import LogoFisicaly from "@/public/images/logo_fisicaly_noir.svg";
+import LogoChateauDucruBeaucaillou from "@/public/images/logo_chateau_ducru-beaucaillou.svg";
 
 export default function Home() {
   return (
     <main className="max-w-screen-lg mx-auto p-5 text-primary-black py-32 grid gap-32">
       <section className={"grid gap-16"}>
-        <div className={"grid grid-cols-12 gap-20"}>
-          <div className={"col-span-11"}>
+        <div className={"grid grid-cols-12 gap-6"}>
+          <div className={"col-span-10"}>
             <h1>
               <span className={"sr-only"}>Fisicaly</span>{" "}
               <LogoFisicaly className={"h-16"} />
@@ -35,7 +36,7 @@ export default function Home() {
               l'entraînement sportif.
             </p>
 
-            <div className={"-ml-16"}>
+            <div className={""}>
               <figure className={"relative object-cover h-96"}>
                 <Image
                   fill
@@ -57,7 +58,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={"flex flex-col gap-8 col-span-1 mt-20"}>
+          <div className={"flex flex-col gap-8 col-span-2 mt-20"}>
             <div className={"flex flex-col"}>
               <Surtitle className={"text-primary-orange text-sm"}>
                 Téléphone
@@ -78,14 +79,21 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={"grid lg:grid-cols-2"}>
+        <div className={"hidden"}>
+          <h5 className={"font-black text-6xl"}>Ils m'ont fait confiance</h5>
+          <LogoChateauDucruBeaucaillou
+            className={"h-16 fill-current text-primary-black"}
+          />
+        </div>
+
+        <div className={"grid lg:grid-cols-1"}>
           <div className={"bg-primary-black/10 p-8"}>
             <h4 className={"flex flex-col mb-4"}>
               <Surtitle className={"text-primary-orange text-xs"}>
                 Spécialité
               </Surtitle>
               <span className={"sr-only"}> : </span>
-              <span className={"font-medium text-2xl"}>
+              <span className={"font-medium text-4xl"}>
                 Prévention en entreprise
               </span>
             </h4>
@@ -105,7 +113,7 @@ export default function Home() {
                 Objectifs
               </Surtitle>
               <span className={"sr-only"}> : </span>
-              <span className={"font-medium text-2xl"}>
+              <span className={"font-medium text-4xl"}>
                 Prévenir les troubles des employés
               </span>
               <span>— musculo-squelettiques/psychologiques</span>
@@ -124,13 +132,13 @@ export default function Home() {
               <span className={"sr-only"}> : </span>
               <span
                 className={
-                  "flex items-center font-medium text-2xl pb-2 border-b mb-2 border-primary-black"
+                  "flex items-center font-medium text-4xl pb-2 border-b mb-2 border-primary-black"
                 }
               >
                 <Arrow className={"h-3 fill-current mr-1"} /> Fidéliser les
                 employés
               </span>
-              <span className={"flex items-center font-medium text-2xl"}>
+              <span className={"flex items-center font-medium text-4xl"}>
                 <Arrow className={"h-3 fill-current mr-1"} /> Renforcer leur
                 engagement
               </span>
@@ -144,7 +152,7 @@ export default function Home() {
                 Bénéfices
               </Surtitle>
               <span className={"sr-only"}> : </span>
-              <span className={"font-medium text-2xl"}>
+              <span className={"font-medium text-4xl"}>
                 Augmentation globale des résultats
               </span>
             </h4>
@@ -174,7 +182,6 @@ export default function Home() {
             — Grille tarifaire
           </span>
         </h2>
-
         <div className={"grid grid-cols-2"}>
           <article
             className={"bg-primary-black p-8 flex flex-col justify-between"}
@@ -204,6 +211,7 @@ export default function Home() {
               </Surtitle>
             </Link>
           </article>
+
           <article
             className={"bg-primary-black/10 p-8 flex flex-col justify-between"}
           >
@@ -226,11 +234,12 @@ export default function Home() {
                   "fill-current text-primary-orange h-3 mr-2 stroke-[30px] stroke-primary-orange"
                 }
               />
-              <Surtitle className={"text-primary-orange font-black text-xl"}>
+              <Surtitle className={"text-primary-orange font-black"}>
                 360 € HT
               </Surtitle>
             </Link>
           </article>
+
           <article
             className={"bg-primary-orange p-8 flex flex-col justify-between"}
           >
@@ -250,7 +259,7 @@ export default function Home() {
             >
               <Arrow
                 className={
-                  "fill-current text-primary-orange h-3 mr-2 stroke-[30px] stroke-primary-orange"
+                  "fill-current text-primary-white h-3 mr-2 stroke-[30px] stroke-primary-white"
                 }
               />
               <Surtitle className={"text-primary-white font-black"}>
@@ -258,6 +267,7 @@ export default function Home() {
               </Surtitle>
             </Link>
           </article>
+
           <article
             className={
               "p-8 border-b border-r border-primary-black/10 flex flex-col justify-between"
@@ -287,93 +297,63 @@ export default function Home() {
               </Surtitle>
             </Link>
           </article>
-        </div>
 
-        <div>
-          <Surtitle className={"text-primary-orange mb-2 text-xl"}>
-            Exemples déjà menés
-          </Surtitle>
-          <ul className={"list-disc ml-5 text-xl"}>
-            {[
-              "Audit des TMS du milieu viticole et élaboration d’un échauffement pour les vignerons",
-              "Conception d’une salle de sport",
-              "Séances de sport hebdomadaires de prévention sportive",
-              "Suivi personnalisé d'employés pour conseils santé et sur leurs troubles musculo-squelletiques de poste précis",
-            ].map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <figure className={"relative object-cover aspect-video"}>
-            <Image
-              fill
-              src={"/images/weights.jpg"}
-              alt={"Photo de poids de musculation"}
-              className={"object-cover object-center"}
-            />
-            <figcaption className={"absolute left-0 bottom-0 p-10"}>
-              <Surtitle className={"text-primary-orange mb-4 text-sm"}>
-                Conception
-              </Surtitle>
-              <p className={"text-primary-white flex flex-col"}>
-                <span className={"text-5xl font-medium"}>
-                  Conception d'une salle de sport
-                </span>
-                <span>
-                  — Équipement complet pour des séances de <u>8 personnes</u>
-                </span>
-              </p>
-            </figcaption>
-          </figure>
-
-          <div className={"grid grid-cols-12"}>
-            <div className={"col-span-8 p-9 p-9"}>
-              <ul className={"list-disc ml-5 space-y-5 mb-9"}>
-                <li className={""}>
-                  <div className={"flex flex-col"}>
-                    <span className={"text-xl"}>
-                      Collaboration avec des partenaires
-                    </span>
-                    <span className={"text-lg"}>
-                      — architecte d’intérieur, fournisseurs
-                    </span>
-                  </div>
-                </li>
-                <li className={""}>
-                  <div className={"flex flex-col"}>
-                    <span className={"text-xl"}>
-                      Métré/Agencement/Dossier vues 3D
-                    </span>
-                    <span className={"text-lg"}>
-                      — prix dégressif en fonction de la dimension de la salle
-                    </span>
-                  </div>
-                </li>
-              </ul>
-
-              <Link
-                href={
-                  "mailto:contact@fisicaly.com?subject=Réserver des séances de sport"
-                }
-                className={"flex items-center justify-end"}
-              >
-                <Arrow
-                  className={
-                    "fill-current text-primary-orange h-3 mr-2 stroke-[30px] stroke-primary-orange"
-                  }
-                />
-                <Surtitle className={"text-primary-orange font-black text-xl"}>
-                  20 € HT/m²
+          <article className={"col-span-2"}>
+            <figure className={"relative object-cover aspect-video"}>
+              <Image
+                fill
+                src={"/images/weights.jpg"}
+                alt={"Photo de poids de musculation"}
+                className={"object-cover object-center"}
+              />
+              <figcaption className={"absolute left-0 bottom-0 p-10"}>
+                <Surtitle className={"text-primary-orange mb-4 text-sm"}>
+                  Conception
                 </Surtitle>
-              </Link>
-            </div>
+                <p className={"text-primary-white flex flex-col"}>
+                  <span className={"text-5xl font-medium"}>
+                    Conception d'une salle de sport
+                  </span>
+                  <span>
+                    — Équipement complet pour des séances de <u>8 personnes</u>
+                  </span>
+                </p>
+              </figcaption>
+            </figure>
 
-            <div className={"col-span-4"}>
+            <div className={"grid grid-cols-12"}>
               <div
                 className={
-                  "bg-primary-orange p-9 flex justify-between flex-col"
+                  "col-span-8 p-8 border-b border-l border-primary-black/10"
+                }
+              >
+                <ul className={"list-disc ml-5 space-y-5 mb-9"}>
+                  <li className={""}>
+                    <div className={"flex flex-col"}>
+                      <span className={"text-xl"}>
+                        Collaboration avec des partenaires
+                      </span>
+                      <span className={"text-lg"}>
+                        — architecte d’intérieur, fournisseurs
+                      </span>
+                    </div>
+                  </li>
+                  <li className={""}>
+                    <div className={"flex flex-col"}>
+                      <span className={"text-xl"}>
+                        Métré/Agencement/Dossier vues 3D
+                      </span>
+                      <span className={"text-lg"}>
+                        — prix dégressif en fonction de la dimension de la salle
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                className={
+                  "bg-primary-orange p-8 flex justify-between flex-col col-span-4"
                 }
               >
                 <Surtitle className={"text-primary-white mb-16"}>
@@ -396,7 +376,23 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-          </div>
+          </article>
+        </div>
+
+        <div>
+          <Surtitle className={"text-primary-orange mb-2 text-xl"}>
+            Exemples déjà menés
+          </Surtitle>
+          <ul className={"list-disc ml-5 text-xl"}>
+            {[
+              "Audit des TMS du milieu viticole et élaboration d’un échauffement pour les vignerons",
+              "Conception d’une salle de sport",
+              "Séances de sport hebdomadaires de prévention sportive",
+              "Suivi personnalisé d'employés pour conseils santé et sur leurs troubles musculo-squelletiques de poste précis",
+            ].map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
         </div>
       </section>
     </main>

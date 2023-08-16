@@ -353,7 +353,7 @@ export default function Flow({ className = "" }) {
     <div className={className}>
       <div className={"w-full aspect-video"}>
         <ReactFlow
-          className={"border border-primary-black"}
+          className={""}
           nodeTypes={nodeTypes}
           fitView={true}
           minZoom={0.5}
