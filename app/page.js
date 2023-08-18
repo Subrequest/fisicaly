@@ -39,7 +39,7 @@ export default function Home() {
               Via Fisicaly, je suis en mesure de vous proposer une prise en
               charge de la prévention et du bien-être de vos employés, en
               utilisant mes compétences dans les domaines de la santé et
-              l'entraînement sportif.
+              l&apos;entraînement sportif.
             </p>
           </div>
 
@@ -79,6 +79,7 @@ export default function Home() {
           <figure className={"relative object-cover h-96"}>
             <ExportedImage
               fill
+              priority
               src={"/images/hugo_costa.jpg"}
               alt={"Portrait de Hugo Costa"}
               className={"object-cover object-[15%_top]"}
@@ -138,8 +139,9 @@ export default function Home() {
                 <span>— musculo-squelettiques/psychologiques</span>
               </h3>
               <p>
-                J'anime des séances de sport axées sur la prévention et team
-                building pour des employés épanouis au sein de leur entreprise.
+                J&apos;anime des séances de sport axées sur la prévention et
+                team building pour des employés épanouis au sein de leur
+                entreprise.
               </p>
             </div>
 
@@ -233,7 +235,7 @@ export default function Home() {
                   "Cette employée a repris une activi- té physique régulière, suivi un pro- gramme pour la perte de poids et a finalement pris en charge des pro- blèmes de santé négligés depuis des mois. Un véritable exemple de motivation et de prise en main de sa santé !",
               },
             ].map((item, index) => (
-              <blockquote className={"p-8"}>
+              <blockquote className={"p-8"} key={index}>
                 <Surtitle className={"text-primary-orange text-sm"}>
                   Avis n°0{index + 1}
                 </Surtitle>
@@ -407,7 +409,7 @@ export default function Home() {
                   </Surtitle>
                   <h3 className={"text-primary-white flex flex-col"}>
                     <span className={"text-5xl font-medium"}>
-                      Conception d'une salle de sport
+                      Conception d&apos;une salle de sport
                     </span>
                     <span>
                       — Équipement complet pour des séances de{" "}
