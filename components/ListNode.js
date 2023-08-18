@@ -1,5 +1,5 @@
 import { Handle, Position } from "reactflow";
-import Arrow from "@/public/images/Arrow.svg";
+import Arrow from "@/public/images/arrow.svg";
 import * as Constant from "@/utils/constants";
 import handlePositionCorrection from "@/utils/handlePositionCorrection";
 import { memo } from "react";
