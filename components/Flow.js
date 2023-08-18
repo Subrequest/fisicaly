@@ -12,8 +12,6 @@ import RoundedNode from "@/components/RoundedNode";
 import OriginNode from "@/components/OriginNode";
 import * as Constant from "@/utils/constants";
 
-import "reactflow/dist/style.css";
-
 const listNodeDimensions = { width: 508, height: 144 };
 const initialNodes = [
   {
@@ -351,7 +349,7 @@ export default function Flow({ className = "" }) {
 
   return (
     <div className={className}>
-      <div className={"w-full aspect-video"}>
+      <div className={"w-full aspect-square sm:aspect-video"}>
         <ReactFlow
           className={""}
           nodeTypes={nodeTypes}

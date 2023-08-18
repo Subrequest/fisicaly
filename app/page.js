@@ -12,12 +12,12 @@ import ExportedImage from "next-image-export-optimizer";
 export default function Home() {
   return (
     <>
-      <main className="max-w-screen-lg mx-auto px-5 text-primary-black py-32 grid gap-32 relative">
+      <main className="max-w-screen-lg mx-auto px-5 text-primary-black pb-32 lg:pt-32 flex flex-col gap-y-32 relative">
         <BackgroundGrid />
         <section className={"grid grid-cols-12"}>
           <div
             className={
-              "col-span-12 lg:col-span-9 border-t-[6px] border-primary-orange p-8"
+              "col-span-12 lg:col-span-9 border-t-[6px] border-primary-orange p-5 lg:p-8"
             }
           >
             <div className={"font-medium"}>
@@ -48,8 +48,8 @@ export default function Home() {
               "flex flex-wrap justify-between lg:justify-normal lg:flex-col col-span-12 lg:col-span-3 gap-y-10"
             }
           >
-            <LogoFisicaly className={"px-8 h-16"} />
-            <div className={"px-8"}>
+            <LogoFisicaly className={"px-5 lg:px-8 h-16"} />
+            <div className={"px-5 lg:px-8"}>
               <div className={"flex flex-col"}>
                 <Surtitle className={"text-primary-orange text-sm"}>
                   Email
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className={"flex flex-col px-8"}>
+            <div className={"flex flex-col px-5 lg:px-8"}>
               <Surtitle className={"text-primary-orange text-sm mb-6"}>
                 Références
               </Surtitle>
@@ -104,10 +104,10 @@ export default function Home() {
 
           <div
             className={
-              "grid bg-white border-x border-primary-black/5 lg:grid-cols-1"
+              "grid bg-white border-x border-primary-black/5 grid-cols-1"
             }
           >
-            <div className={"p-8"}>
+            <div className={"p-5 lg:p-8"}>
               <h3 className={"flex flex-col mb-4"}>
                 <Surtitle className={"text-primary-orange text-sm"}>
                   Spécialité
@@ -127,7 +127,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className={"p-8 bg-primary-black/5"}>
+            <div className={"p-5 lg:p-8 bg-primary-black/5"}>
               <h3 className={"flex flex-col mb-4"}>
                 <Surtitle className={"text-primary-orange text-sm"}>
                   Objectifs
@@ -145,7 +145,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className={"bg-primary-orange  p-8"}>
+            <div className={"bg-primary-orange  p-5 lg:p-8"}>
               <h3 className={"flex flex-col"}>
                 <Surtitle className={"text-primary-white text-sm"}>
                   Résultats
@@ -171,7 +171,7 @@ export default function Home() {
               </h3>
             </div>
 
-            <div className={"bg-primary-black p-8"}>
+            <div className={"bg-primary-black p-5 lg:p-8"}>
               <h3 className={"flex flex-col mb-4 text-primary-white"}>
                 <Surtitle className={"text-primary-orange text-sm"}>
                   Bénéfices
@@ -189,7 +189,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={"grid gap-16 px-8"}>
+        <section className={"flex flex-col gap-y-16 px-5 lg:px-8"}>
           <h2 className={"flex flex-col"}>
             <span className={"text-5xl sm:text-6xl font-black"}>
               Intervention
@@ -199,11 +199,11 @@ export default function Home() {
             </span>
           </h2>
 
-          <Flow />
+          <Flow className={"-mx-5 lg:mx-0"} />
         </section>
 
-        <section className={"grid gap-16"}>
-          <h2 className={"flex flex-col px-8"}>
+        <section className={"flex flex-col gap-y-16"}>
+          <h2 className={"flex flex-col px-5 lg:px-8"}>
             <span className={"text-5xl sm:text-6xl font-black"}>
               Retours clients
             </span>
@@ -235,7 +235,7 @@ export default function Home() {
                   "Cette employée a repris une activi- té physique régulière, suivi un pro- gramme pour la perte de poids et a finalement pris en charge des pro- blèmes de santé négligés depuis des mois. Un véritable exemple de motivation et de prise en main de sa santé !",
               },
             ].map((item, index) => (
-              <blockquote className={"p-8"} key={index}>
+              <blockquote className={"p-5 lg:p-8"} key={index}>
                 <Surtitle className={"text-primary-orange text-sm"}>
                   Avis n°0{index + 1}
                 </Surtitle>
@@ -249,8 +249,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={"grid gap-16"}>
-          <h2 className={"flex flex-col px-8"}>
+        <section className={"flex flex-col gap-y-16"}>
+          <h2 className={"flex flex-col px-5 lg:px-8"}>
             <span className={"text-5xl sm:text-6xl font-black"}>
               Prestations
             </span>
@@ -261,7 +261,9 @@ export default function Home() {
 
           <div className={"grid md:grid-cols-2 bg-white"}>
             <article
-              className={"bg-primary-black p-8 flex flex-col justify-between"}
+              className={
+                "bg-primary-black p-5 lg:p-8 flex flex-col justify-between"
+              }
             >
               <div>
                 <Surtitle className={"text-primary-orange mb-2 text-sm"}>
@@ -295,7 +297,9 @@ export default function Home() {
             </article>
 
             <article
-              className={"bg-primary-black/5 p-8 flex flex-col justify-between"}
+              className={
+                "bg-primary-black/5 p-5 lg:p-8 flex flex-col justify-between"
+              }
             >
               <div>
                 <Surtitle className={"text-primary-orange mb-2 text-sm"}>
@@ -328,7 +332,9 @@ export default function Home() {
             </article>
 
             <article
-              className={"bg-primary-orange p-8 flex flex-col justify-between"}
+              className={
+                "bg-primary-orange p-5 lg:p-8 flex flex-col justify-between"
+              }
             >
               <div>
                 <Surtitle className={"text-primary-white mb-2 text-sm"}>
@@ -362,7 +368,7 @@ export default function Home() {
 
             <article
               className={
-                "p-8 border-l md:border-l-0 md:border-b border-r bg-white border-primary-black/10 flex flex-col justify-between"
+                "p-5 lg:p-8 border-l md:border-l-0 md:border-b border-r bg-white border-primary-black/10 flex flex-col justify-between"
               }
             >
               <div>
@@ -422,7 +428,7 @@ export default function Home() {
               <div className={"grid md:grid-cols-12"}>
                 <div
                   className={
-                    "md:col-span-8 p-8 border-b border-primary-black/5"
+                    "md:col-span-8 p-5 lg:p-8 border-b border-primary-black/5"
                   }
                 >
                   <ul className={"space-y-5 mb-9"}>
@@ -454,7 +460,7 @@ export default function Home() {
 
                 <div
                   className={
-                    "bg-primary-orange p-8 flex justify-between flex-col md:col-span-4"
+                    "bg-primary-orange p-5 lg:p-8 flex justify-between flex-col md:col-span-4"
                   }
                 >
                   <Surtitle className={"text-primary-white mb-16"}>
@@ -481,7 +487,7 @@ export default function Home() {
             </article>
           </div>
 
-          <div className={"px-8"}>
+          <div className={"px-5 lg:px-8"}>
             <Surtitle className={"text-primary-orange mb-2 text-sm"}>
               Exemples déjà menés
             </Surtitle>
@@ -500,15 +506,15 @@ export default function Home() {
       </main>
       <footer className="max-w-screen-lg mx-auto px-5">
         <div className="md:grid-cols-3 bg-primary-black text-primary-white grid">
-          <div className={"md:col-span-3 p-8"}>
+          <div className={"md:col-span-3 p-5 lg:p-8"}>
             <LogoFisicalyText className={"h-10 text-primary-white"} />
           </div>
-          <div className={"p-8"}>
+          <div className={"p-5 lg:p-8"}>
             <p className={"font-medium [text-wrap:balance]"}>
               Masseur-kinésithérapeute & Coach sportif
             </p>
           </div>
-          <div className={"p-8"}>
+          <div className={"p-5 lg:p-8"}>
             <Link
               prefetch={false}
               href={"mailto:contact@fisicaly.com"}
@@ -517,7 +523,7 @@ export default function Home() {
               contact@fisicaly.com
             </Link>
           </div>
-          <div className={"p-8 flex flex-col"}>
+          <div className={"p-5 lg:p-8 flex flex-col"}>
             Copyright © Fisicaly, {new Date().getFullYear()}
             <Link
               prefetch={false}
