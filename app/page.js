@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Surtitle from "@/components/Surtitle";
 import Arrow from "@/public/images/arrow.svg";
@@ -8,6 +7,7 @@ import LogoFisicaly from "@/public/images/logo_fisicaly_noir_long.svg";
 import LogoChateauDucruBeaucaillou from "@/public/images/logo_chateau_ducru-beaucaillou.svg";
 import BackgroundGrid from "@/components/BackgroundGrid";
 import CheckMark from "@/public/images/checkmark.svg";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Home() {
   return (
@@ -77,7 +77,7 @@ export default function Home() {
 
         <section>
           <figure className={"relative object-cover h-96"}>
-            <Image
+            <ExportedImage
               fill
               src={"/images/hugo_costa.jpg"}
               alt={"Portrait de Hugo Costa"}
@@ -395,7 +395,7 @@ export default function Home() {
 
             <article className={"md:col-span-2"}>
               <figure className={"relative aspect-square sm:aspect-video"}>
-                <Image
+                <ExportedImage
                   fill
                   src={"/images/weights.jpg"}
                   alt={"Photo de poids de musculation"}
