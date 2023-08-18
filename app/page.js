@@ -151,23 +151,37 @@ export default function Home() {
                   Résultats
                 </Surtitle>
                 <span className={"sr-only"}> : </span>
-                <span
-                  className={
-                    "flex items-center font-medium text-3xl sm:text-4xl pb-2 border-b mb-2 border-primary-black"
-                  }
-                >
-                  <Arrow className={"h-3 fill-current mr-1"} /> Fidéliser les
-                  employés
-                </span>
-                <span
-                  className={
-                    "flex items-center font-medium text-3xl sm:text-4xl"
-                  }
-                >
-                  <Arrow className={"h-3 fill-current mr-1"} /> Renforcer leur
-                  engagement
-                </span>
-                <span>— sur leur poste de travail</span>
+                <ul>
+                  <li
+                    className={
+                      " font-medium pb-2 border-b mb-2 border-primary-black"
+                    }
+                  >
+                    <span
+                      className={
+                        "inline-flex justify-start items-start text-3xl sm:text-4xl"
+                      }
+                    >
+                      <Arrow
+                        className={"shrink-0 h-3 fill-current mr-2 mt-4"}
+                      />
+                      Fidéliser les employés
+                    </span>
+                  </li>
+                  <li className={"font-medium flex flex-col"}>
+                    <span
+                      className={
+                        "inline-flex justify-start items-start text-3xl sm:text-4xl"
+                      }
+                    >
+                      <Arrow
+                        className={"shrink-0 h-3 fill-current mr-2 mt-4"}
+                      />
+                      Renforcer leur engagement
+                    </span>
+                    <span className={"ml-5"}>— sur leur poste de travail</span>
+                  </li>
+                </ul>
               </h3>
             </div>
 
@@ -409,7 +423,7 @@ export default function Home() {
                   alt={"Photo de poids de musculation"}
                   className={"object-cover object-center"}
                 />
-                <figcaption className={"absolute left-0 bottom-0 p-10"}>
+                <figcaption className={"absolute left-0 bottom-0 p-5 lg:p-8"}>
                   <Surtitle className={"text-primary-orange text-sm"}>
                     Conception
                   </Surtitle>
