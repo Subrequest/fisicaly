@@ -8,6 +8,7 @@ import LogoChateauDucruBeaucaillou from "@/public/images/logo_chateau_ducru-beau
 import BackgroundGrid from "@/components/BackgroundGrid";
 import CheckMark from "@/public/images/checkmark.svg";
 import ExportedImage from "next-image-export-optimizer";
+import Heading from "@/components/Heading";
 
 export default function Home() {
   return (
@@ -17,25 +18,19 @@ export default function Home() {
         <section className={"grid grid-cols-12"}>
           <div
             className={
-              "col-span-12 lg:col-span-9 border-t-[6px] border-primary-orange p-5 lg:p-8"
+              "col-span-12 lg:col-span-9 border-t-[6px] border-primary-orange pt-5 lg:pt-8"
             }
           >
-            <div className={"font-medium"}>
-              <h1 className={"flex flex-col my-8"}>
-                <span
-                  className={
-                    "text-5xl sm:text-6xl font-black mb-3 hyphens-manual md:hyphens-none"
-                  }
-                >
-                  Masseur-kinési&shy;thérapeute & Coach sportif
-                </span>
-                <span className={"text-primary-orange font-medium text-2xl"}>
-                  — diplômé d’État depuis 2020
-                </span>
-              </h1>
+            <LogoFisicaly className={"h-16 px-5 lg:px-8"} />
+
+            <div className={"py-10"}>
+              <Heading.H1
+                title={`Masseur-kinési&shy;thérapeute & Coach sportif`}
+                subtitle={"— diplômé d’État depuis 2020"}
+              />
             </div>
 
-            <p className={"pb-12 max-w-xl"}>
+            <p className={"pb-12 max-w-xl px-5 lg:px-8"}>
               Via Fisicaly, je suis en mesure de vous proposer une prise en
               charge de la prévention et du bien-être de vos employés, en
               utilisant mes compétences dans les domaines de la santé et
@@ -45,27 +40,22 @@ export default function Home() {
 
           <div
             className={
-              "flex flex-wrap justify-between lg:justify-normal lg:flex-col col-span-12 lg:col-span-3 gap-y-10"
+              "flex flex-wrap justify-start lg:justify-normal flex-col p-5 lg:p-8 lg:mt-24 gap-y-10"
             }
           >
-            <LogoFisicaly className={"px-5 lg:px-8 h-16"} />
-            <div className={"px-5 lg:px-8"}>
-              <div className={"flex flex-col"}>
-                <Surtitle className={"text-primary-orange text-sm"}>
-                  Email
-                </Surtitle>
-                <Link
-                  prefetch={false}
-                  href={"mailto:contact@fisicaly.com"}
-                  className={"hover:text-primary-orange duration-150"}
-                >
-                  contact@fisicaly.com
-                </Link>
-              </div>
+            <div className={"flex flex-col"}>
+              <Surtitle className={"text-primary-orange"}>Email</Surtitle>
+              <Link
+                prefetch={false}
+                href={"mailto:contact@fisicaly.com"}
+                className={"hover:text-primary-orange duration-150"}
+              >
+                contact@fisicaly.com
+              </Link>
             </div>
 
-            <div className={"flex flex-col px-5 lg:px-8"}>
-              <Surtitle className={"text-primary-orange text-sm mb-6"}>
+            <div className={"flex flex-col"}>
+              <Surtitle className={"text-primary-orange mb-6"}>
                 Références
               </Surtitle>
               <div className={"flex gap-32 text-primary-black/50"}>
@@ -89,12 +79,12 @@ export default function Home() {
                 "absolute right-0 bottom-0 bg-primary-orange flex flex-col pt-6 pl-6 pr-20 pb-16"
               }
             >
-              <Surtitle className={"text-sm text-primary-white"}>
+              <Surtitle className={"text-primary-white"}>
                 Fondateur de Fisicaly
               </Surtitle>
               <span
                 className={
-                  "text-3xl sm:text-4xl font-medium tracking-[0.040em]"
+                  "text-2xl sm:text-3xl md:text-4xl font-medium tracking-[0.040em]"
                 }
               >
                 Hugo Costa
@@ -109,11 +99,13 @@ export default function Home() {
           >
             <div className={"p-5 lg:p-8"}>
               <h3 className={"flex flex-col mb-4"}>
-                <Surtitle className={"text-primary-orange text-sm"}>
+                <Surtitle className={"text-primary-orange"}>
                   Spécialité
                 </Surtitle>
                 <span className={"sr-only"}> : </span>
-                <span className={"font-medium text-3xl sm:text-4xl"}>
+                <span
+                  className={"font-medium text-2xl sm:text-3xl md:text-4xl"}
+                >
                   Prévention en entreprise
                 </span>
               </h3>
@@ -129,11 +121,11 @@ export default function Home() {
 
             <div className={"p-5 lg:p-8 bg-primary-black/5"}>
               <h3 className={"flex flex-col mb-4"}>
-                <Surtitle className={"text-primary-orange text-sm"}>
-                  Objectifs
-                </Surtitle>
+                <Surtitle className={"text-primary-orange"}>Objectifs</Surtitle>
                 <span className={"sr-only"}> : </span>
-                <span className={"font-medium text-3xl sm:text-4xl"}>
+                <span
+                  className={"font-medium text-2xl sm:text-3xl md:text-4xl"}
+                >
                   Prévenir les troubles des employés
                 </span>
                 <span>— musculo-squelettiques/psychologiques</span>
@@ -147,9 +139,7 @@ export default function Home() {
 
             <div className={"bg-primary-orange  p-5 lg:p-8"}>
               <h3 className={"flex flex-col"}>
-                <Surtitle className={"text-primary-white text-sm"}>
-                  Résultats
-                </Surtitle>
+                <Surtitle className={"text-primary-white"}>Résultats</Surtitle>
                 <span className={"sr-only"}> : </span>
                 <ul>
                   <li
@@ -159,7 +149,7 @@ export default function Home() {
                   >
                     <span
                       className={
-                        "inline-flex justify-start items-start text-3xl sm:text-4xl"
+                        "inline-flex justify-start items-start text-2xl sm:text-3xl md:text-4xl"
                       }
                     >
                       <Arrow
@@ -171,7 +161,7 @@ export default function Home() {
                   <li className={"font-medium flex flex-col"}>
                     <span
                       className={
-                        "inline-flex justify-start items-start text-3xl sm:text-4xl"
+                        "inline-flex justify-start items-start text-2xl sm:text-3xl md:text-4xl"
                       }
                     >
                       <Arrow
@@ -187,11 +177,11 @@ export default function Home() {
 
             <div className={"bg-primary-black p-5 lg:p-8"}>
               <h3 className={"flex flex-col mb-4 text-primary-white"}>
-                <Surtitle className={"text-primary-orange text-sm"}>
-                  Bénéfices
-                </Surtitle>
+                <Surtitle className={"text-primary-orange"}>Bénéfices</Surtitle>
                 <span className={"sr-only"}> : </span>
-                <span className={"font-medium text-3xl sm:text-4xl"}>
+                <span
+                  className={"font-medium text-2xl sm:text-3xl md:text-4xl"}
+                >
                   Augmentation globale des résultats
                 </span>
               </h3>
@@ -203,28 +193,22 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={"flex flex-col gap-y-16 px-5 lg:px-8"}>
-          <h2 className={"flex flex-col"}>
-            <span className={"text-5xl sm:text-6xl font-black"}>
-              Intervention
-            </span>
-            <span className={"text-2xl text-primary-black/40"}>
-              — Résultats observables dans votre entreprise
-            </span>
-          </h2>
+        <section className={"flex flex-col gap-y-16"}>
+          <Heading.H2
+            title={"Intervention"}
+            subtitle={"— Résultats observables dans votre entreprise"}
+          />
 
           <Flow className={"-mx-5 lg:mx-0"} />
         </section>
 
         <section className={"flex flex-col gap-y-16"}>
-          <h2 className={"flex flex-col px-5 lg:px-8"}>
-            <span className={"text-5xl sm:text-6xl font-black"}>
-              Retours clients
-            </span>
-            <span className={"text-2xl text-primary-black/40"}>
-              — Employés montrant les bénéfices des séances de coaching
-            </span>
-          </h2>
+          <Heading.H2
+            title={"Retours clients"}
+            subtitle={
+              "— Employés montrant les bénéfices des séances de coaching"
+            }
+          />
 
           <div className={"grid sm:grid-cols-2"}>
             {[
@@ -250,10 +234,16 @@ export default function Home() {
               },
             ].map((item, index) => (
               <blockquote className={"p-5 lg:p-8"} key={index}>
-                <Surtitle className={"text-primary-orange text-sm"}>
+                <Surtitle className={"text-primary-orange"}>
                   Avis n°0{index + 1}
                 </Surtitle>
-                <h3 className={"text-3xl font-medium mb-3"}>{item.title}</h3>
+                <h3
+                  className={
+                    "text-2xl sm:text-3xl md:text-4xl font-medium mb-3"
+                  }
+                >
+                  {item.title}
+                </h3>
                 <p>{item.description}</p>
                 <footer className={"sr-only"}>
                   <cite>Employé n°{index + 1}</cite>
@@ -264,28 +254,20 @@ export default function Home() {
         </section>
 
         <section className={"flex flex-col gap-y-16"}>
-          <h2 className={"flex flex-col px-5 lg:px-8"}>
-            <span className={"text-5xl sm:text-6xl font-black"}>
-              Prestations
-            </span>
-            <span className={"text-2xl text-primary-black/40"}>
-              — Grille tarifaire
-            </span>
-          </h2>
-
-          <div className={"grid md:grid-cols-2 bg-white"}>
+          <Heading.H2 title={"Prestations"} subtitle={"— Grille tarifaire"} />
+          <div className={"grid md:grid-cols-2"}>
             <article
               className={
                 "bg-primary-black p-5 lg:p-8 flex flex-col justify-between"
               }
             >
               <div>
-                <Surtitle className={"text-primary-orange mb-2 text-sm"}>
+                <Surtitle className={"text-primary-orange mb-2"}>
                   Audit
                 </Surtitle>
                 <h3
                   className={
-                    "text-primary-white font-medium text-3xl sm:text-4xl mb-4"
+                    "text-primary-white font-medium text-2xl sm:text-3xl md:text-4xl mb-4"
                   }
                 >
                   Analyse des problématiques liées aux troubles musculo-
@@ -316,12 +298,10 @@ export default function Home() {
               }
             >
               <div>
-                <Surtitle className={"text-primary-orange mb-2 text-sm"}>
-                  Séances
-                </Surtitle>
+                <Surtitle className={"text-primary-orange"}>Séances</Surtitle>
                 <h3
                   className={
-                    "text-primary-black font-medium text-3xl sm:text-4xl mb-4"
+                    "text-primary-black font-medium text-2xl sm:text-3xl md:text-4xl mb-4"
                   }
                 >
                   Séances de sport adaptées aux besoins de l’entreprise
@@ -341,7 +321,7 @@ export default function Home() {
                     "fill-current h-3 mr-2 stroke-[30px] stroke-primary-orange group-hover:stroke-primary-black duration-150"
                   }
                 />
-                <Surtitle className={"font-black"}>360&nbsp;€&nbsp;HT</Surtitle>
+                <Surtitle className={"font-black"}>Sur devis</Surtitle>
               </Link>
             </article>
 
@@ -351,12 +331,12 @@ export default function Home() {
               }
             >
               <div>
-                <Surtitle className={"text-primary-white mb-2 text-sm"}>
+                <Surtitle className={"text-primary-white mb-2"}>
                   Prévention
                 </Surtitle>
                 <h3
                   className={
-                    "text-primary-black font-medium text-3xl sm:text-4xl mb-4"
+                    "text-primary-black font-medium text-2xl sm:text-3xl md:text-4xl mb-4"
                   }
                 >
                   Suivi préventif spécifique/formation des employés
@@ -386,12 +366,12 @@ export default function Home() {
               }
             >
               <div>
-                <Surtitle className={"text-primary-orange mb-2 text-sm"}>
+                <Surtitle className={"text-primary-orange mb-2"}>
                   Formation
                 </Surtitle>
                 <h3
                   className={
-                    "text-primary-black font-medium text-3xl sm:text-4xl mb-4"
+                    "text-primary-black font-medium text-2xl sm:text-3xl md:text-4xl mb-4"
                   }
                 >
                   Formation sur les bases de la prévention
@@ -421,10 +401,10 @@ export default function Home() {
                   fill
                   src={"/images/weights.jpg"}
                   alt={"Photo de poids de musculation"}
-                  className={"object-cover object-center"}
+                  className={"object-cover object-center brightness-75"}
                 />
                 <figcaption className={"absolute left-0 bottom-0 p-5 lg:p-8"}>
-                  <Surtitle className={"text-primary-orange text-sm"}>
+                  <Surtitle className={"text-primary-orange"}>
                     Conception
                   </Surtitle>
                   <h3 className={"text-primary-white flex flex-col"}>
@@ -440,11 +420,7 @@ export default function Home() {
               </figure>
 
               <div className={"grid md:grid-cols-12"}>
-                <div
-                  className={
-                    "md:col-span-8 p-5 lg:p-8 border-b border-primary-black/5"
-                  }
-                >
+                <div className={"md:col-span-8 order-2 md:order-1 p-5 lg:p-8"}>
                   <ul className={"space-y-5 mb-9"}>
                     <li className={"flex items-top"}>
                       <CheckMark className={"fill-current h-5 mt-1 mr-2"} />
@@ -474,7 +450,7 @@ export default function Home() {
 
                 <div
                   className={
-                    "bg-primary-orange p-5 lg:p-8 flex justify-between flex-col md:col-span-4"
+                    "order-1 md:order-2 bg-primary-orange p-5 lg:p-8 flex justify-between flex-col md:col-span-4"
                   }
                 >
                   <Surtitle className={"text-primary-white mb-16"}>
@@ -502,7 +478,7 @@ export default function Home() {
           </div>
 
           <div className={"px-5 lg:px-8"}>
-            <Surtitle className={"text-primary-orange mb-2 text-sm"}>
+            <Surtitle className={"text-primary-orange mb-2"}>
               Exemples déjà menés
             </Surtitle>
             <ul className={"list-disc ml-5 text-xl"}>
