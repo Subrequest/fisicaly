@@ -2,7 +2,6 @@ import Link from "next/link";
 import Surtitle from "@/components/Surtitle";
 import Arrow from "@/public/images/arrow.svg";
 import Flow from "@/components/Flow";
-import LogoFisicalyText from "@/public/images/logo_fisicaly_text.svg";
 import LogoFisicaly from "@/public/images/logo_fisicaly_noir_long.svg";
 import LogoChateauDucruBeaucaillou from "@/public/images/logo_chateau_ducru-beaucaillou.svg";
 import BackgroundGrid from "@/components/BackgroundGrid";
@@ -13,14 +12,10 @@ import Heading from "@/components/Heading";
 export default function Home() {
   return (
     <>
-      <main className="max-w-screen-lg mx-auto px-5 text-primary-black pb-32 lg:pt-32 flex flex-col gap-y-32 relative">
+      <main className="max-w-screen-lg mx-auto px-5 text-primary-black pb-32 flex flex-col gap-y-32 relative">
         <BackgroundGrid />
         <section className={"grid grid-cols-12"}>
-          <div
-            className={
-              "col-span-12 lg:col-span-9 border-t-[6px] border-primary-orange pt-5 lg:pt-8"
-            }
-          >
+          <div className={"col-span-12 lg:col-span-9 pt-5 lg:pt-8"}>
             <LogoFisicaly className={"h-16 px-5 lg:px-8"} />
 
             <div className={"py-10"}>
@@ -30,7 +25,7 @@ export default function Home() {
               />
             </div>
 
-            <p className={"pb-12 max-w-xl px-5 lg:px-8"}>
+            <p className={"pb-12 max-w-2xl px-5 lg:px-8"}>
               Via Fisicaly, je suis en mesure de vous proposer une prise en
               charge de la prévention et du bien-être de vos employés, en
               utilisant mes compétences dans les domaines de la santé et
@@ -99,7 +94,7 @@ export default function Home() {
           >
             <div className={"p-5 lg:p-8"}>
               <h3 className={"flex flex-col mb-4"}>
-                <Surtitle className={"text-primary-orange"}>
+                <Surtitle className={"text-primary-orange mb-1"}>
                   Spécialité
                 </Surtitle>
                 <span className={"sr-only"}> : </span>
@@ -121,14 +116,16 @@ export default function Home() {
 
             <div className={"p-5 lg:p-8 bg-primary-black/5"}>
               <h3 className={"flex flex-col mb-4"}>
-                <Surtitle className={"text-primary-orange"}>Objectifs</Surtitle>
+                <Surtitle className={"text-primary-orange mb-1"}>
+                  Objectifs
+                </Surtitle>
                 <span className={"sr-only"}> : </span>
                 <span
                   className={"font-medium text-2xl sm:text-3xl md:text-4xl"}
                 >
                   Prévenir les troubles des employés
                 </span>
-                <span>— musculo-squelettiques/psychologiques</span>
+                <span>— musculo-squelettiques et psychologiques</span>
               </h3>
               <p>
                 J&apos;anime des séances de sport axées sur la prévention et
@@ -139,12 +136,14 @@ export default function Home() {
 
             <div className={"bg-primary-orange  p-5 lg:p-8"}>
               <h3 className={"flex flex-col"}>
-                <Surtitle className={"text-primary-white"}>Résultats</Surtitle>
+                <Surtitle className={"text-primary-white mb-1"}>
+                  Résultats
+                </Surtitle>
                 <span className={"sr-only"}> : </span>
                 <ul>
                   <li
                     className={
-                      " font-medium pb-2 border-b mb-2 border-primary-black"
+                      "font-medium pb-2 border-b mb-2 border-primary-black"
                     }
                   >
                     <span
@@ -177,7 +176,9 @@ export default function Home() {
 
             <div className={"bg-primary-black p-5 lg:p-8"}>
               <h3 className={"flex flex-col mb-4 text-primary-white"}>
-                <Surtitle className={"text-primary-orange"}>Bénéfices</Surtitle>
+                <Surtitle className={"text-primary-orange mb-1"}>
+                  Bénéfices
+                </Surtitle>
                 <span className={"sr-only"}> : </span>
                 <span
                   className={"font-medium text-2xl sm:text-3xl md:text-4xl"}
@@ -494,37 +495,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="max-w-screen-lg mx-auto px-5">
-        <div className="md:grid-cols-3 bg-primary-black text-primary-white grid">
-          <div className={"md:col-span-3 p-5 lg:p-8"}>
-            <LogoFisicalyText className={"h-10 text-primary-white"} />
-          </div>
-          <div className={"p-5 lg:p-8"}>
-            <p className={"font-medium [text-wrap:balance]"}>
-              Masseur-kinésithérapeute & Coach sportif
-            </p>
-          </div>
-          <div className={"p-5 lg:p-8"}>
-            <Link
-              prefetch={false}
-              href={"mailto:contact@fisicaly.com"}
-              className={"hover:text-primary-orange transition duration-150"}
-            >
-              contact@fisicaly.com
-            </Link>
-          </div>
-          <div className={"p-5 lg:p-8 flex flex-col"}>
-            Copyright © Fisicaly, {new Date().getFullYear()}
-            <Link
-              prefetch={false}
-              href={"https://louiscuvelier.com"}
-              className={"hover:text-primary-orange transition duration-150"}
-            >
-              Réalisation Louis Cuvelier
-            </Link>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }

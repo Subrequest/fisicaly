@@ -1,7 +1,7 @@
 const Heading = {
   H1: ({ title, subtitle }) => (
     <h1
-      className={"flex flex-col px-5 lg:px-8 border-l-4 border-primary-orange"}
+      className={"flex flex-col px-5 lg:px-8 border-l-2 border-primary-orange"}
     >
       <span
         className={
@@ -16,7 +16,7 @@ const Heading = {
   ),
   H2: ({ title, subtitle }) => (
     <h2
-      className={"flex flex-col border-l-4 border-primary-orange px-5 lg:px-8"}
+      className={"flex flex-col border-l-2 border-primary-orange px-5 lg:px-8"}
     >
       <span className={"text-4xl sm:text-5xl md:text-6xl font-black"}>
         {title}
