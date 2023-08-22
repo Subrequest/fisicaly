@@ -10,7 +10,7 @@ const meta = {
   title: "Fisicaly – Masseur-kinésithérapeute & Coach sportif",
   description:
     "Priorisez la santé de vos employés avec Fisicaly. Profitez d'une expertise alliant santé et entraînement sportif pour une meilleure prévention et bien-être au sein de votre entreprise.",
-  images: [""],
+  images: ["images/cover.jpg"],
 };
 
 export const metadata = {
