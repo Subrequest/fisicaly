@@ -92,7 +92,7 @@ export default function Home() {
             }
           >
             <div className={"p-5 lg:p-8"}>
-              <h3 className={"flex flex-col mb-4"}>
+              <div className={"flex flex-col mb-4"}>
                 <Surtitle className={"text-primary-orange mb-1"}>
                   Spécialité
                 </Surtitle>
@@ -102,7 +102,7 @@ export default function Home() {
                 >
                   Prévention en entreprise
                 </span>
-              </h3>
+              </div>
               <p className={"flex flex-col"}>
                 <span className={"mb-1"}>
                   Travaillant auprès du secteur viticole depuis plus de 2 ans.
@@ -114,7 +114,7 @@ export default function Home() {
             </div>
 
             <div className={"p-5 lg:p-8 bg-primary-black/5"}>
-              <h3 className={"flex flex-col mb-4"}>
+              <div className={"flex flex-col mb-4"}>
                 <Surtitle className={"text-primary-orange mb-1"}>
                   Objectifs
                 </Surtitle>
@@ -125,7 +125,7 @@ export default function Home() {
                   Prévenir les troubles des employés
                 </span>
                 <span>— musculo-squelettiques et psychologiques</span>
-              </h3>
+              </div>
               <p>
                 J&apos;anime des séances de sport axées sur la prévention et
                 team building pour des employés épanouis au sein de leur
@@ -134,7 +134,7 @@ export default function Home() {
             </div>
 
             <div className={"bg-primary-orange  p-5 lg:p-8"}>
-              <h3 className={"flex flex-col"}>
+              <div className={"flex flex-col"}>
                 <Surtitle className={"text-primary-white mb-1"}>
                   Résultats
                 </Surtitle>
@@ -170,11 +170,11 @@ export default function Home() {
                     <span className={"ml-5"}>— sur leur poste de travail</span>
                   </li>
                 </ul>
-              </h3>
+              </div>
             </div>
 
             <div className={"bg-primary-black p-5 lg:p-8"}>
-              <h3 className={"flex flex-col mb-4 text-primary-white"}>
+              <div className={"flex flex-col mb-4 text-primary-white"}>
                 <Surtitle className={"text-primary-orange mb-1"}>
                   Bénéfices
                 </Surtitle>
@@ -184,7 +184,7 @@ export default function Home() {
                 >
                   Augmentation globale des résultats
                 </span>
-              </h3>
+              </div>
               <p className={"text-primary-white"}>
                 Grâce à une baisse de l’absentéisme etd une réduction du
                 turnover au sein des équipes.
