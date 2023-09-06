@@ -87,13 +87,17 @@ export default function RootLayout({ children }) {
               <p className={"font-medium [text-wrap:balance]"}>
                 Masseur-kinésithérapeute & Coach sportif
               </p>
-              <Link
-                prefetch={false}
-                href={"mailto:contact@fisicaly.com"}
-                className={"hover:text-primary-orange transition duration-150"}
-              >
-                contact@fisicaly.com
-              </Link>
+              <div>
+                <Link
+                  prefetch={false}
+                  href={"mailto:contact@fisicaly.com"}
+                  className={
+                    "hover:text-primary-orange transition duration-150"
+                  }
+                >
+                  contact@fisicaly.com
+                </Link>
+              </div>
               <div className={"flex flex-col"}>
                 Copyright © Fisicaly, {new Date().getFullYear()}
                 <Link

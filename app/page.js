@@ -3,6 +3,7 @@ import Surtitle from "@/components/Surtitle";
 import Arrow from "@/public/images/arrow.svg";
 import Flow from "@/components/Flow";
 import LogoFisicaly from "@/public/images/logo_fisicaly_noir_long.svg";
+import LogoChateauDucruBeaucaillou from "@/public/images/logo_chateau_ducru-beaucaillou.svg";
 import BackgroundGrid from "@/components/BackgroundGrid";
 import CheckMark from "@/public/images/checkmark.svg";
 import ExportedImage from "next-image-export-optimizer";
