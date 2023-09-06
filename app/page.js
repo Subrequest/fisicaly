@@ -48,14 +48,14 @@ export default function Home() {
               </Link>
             </div>
 
-            {/*<div className={"flex flex-col"}>*/}
-            {/*  <Surtitle className={"text-primary-orange mb-6"}>*/}
-            {/*    Références*/}
-            {/*  </Surtitle>*/}
-            {/*  <div className={"flex gap-32 text-primary-black/50"}>*/}
-            {/*    <LogoChateauDucruBeaucaillou className={"fill-current h-32"} />*/}
-            {/*  </div>*/}
-            {/*</div>*/}
+            <div className={"flex flex-col"}>
+              <Surtitle className={"text-primary-orange mb-6"}>
+                Références
+              </Surtitle>
+              <div className={"flex gap-32 text-primary-black/50"}>
+                <LogoChateauDucruBeaucaillou className={"fill-current h-32"} />
+              </div>
+            </div>
           </div>
         </section>
 
