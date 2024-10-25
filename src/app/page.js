@@ -423,7 +423,7 @@ export default function Home() {
               <div className={"grid md:grid-cols-12"}>
                 <div className={"order-2 p-5 md:order-1 md:col-span-8 lg:p-8"}>
                   <ul className={"mb-9 space-y-5"}>
-                    <li className={"items-top flex"}>
+                    <li className={"flex items-start"}>
                       <CheckMark className={"mr-2 mt-1 h-5 fill-current"} />
                       <div className={"flex flex-col"}>
                         <span className={"text-xl"}>
@@ -434,7 +434,7 @@ export default function Home() {
                         </span>
                       </div>
                     </li>
-                    <li className={"items-top flex"}>
+                    <li className={"flex items-start"}>
                       <CheckMark className={"mr-2 mt-1 h-5 fill-current"} />
                       <div className={"flex flex-col"}>
                         <span className={"text-xl"}>
