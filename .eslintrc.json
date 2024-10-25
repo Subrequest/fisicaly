@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended",
+    "plugin:react-hooks/recommended",
+    "eslint:recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": ["eslint-plugin-react-compiler"],
+  "parserOptions": {
+    "project": true
+  },
+  "root": true,
+  "rules": {
+    "react-compiler/react-compiler": "error"
+  }
 }

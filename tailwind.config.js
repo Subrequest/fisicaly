@@ -2,15 +2,15 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: [
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./utils/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/utils/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Tomato Grotesk", ...defaultTheme.fontFamily.sans],
-        secondary: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        primary: ["var(--font-primary)", ...defaultTheme.fontFamily.sans],
+        secondary: ["var(--font-secondary)", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         "primary-black": "#050606",

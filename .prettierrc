@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ],
+  "tailwindAttributes": [
+    ".*Classes.*"
+  ],
+  "tailwindFunctions": [
+    "clsx",
+    "tv",
+    "cva",
+    "cn",
+    "cv"
+  ]
+}
